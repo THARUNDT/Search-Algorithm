@@ -100,8 +100,11 @@ else:
     print("Element found at index: ",result)
 ~~~
 ## Output:
+Program for linear search method to match the item in a list.
 ![Screenshot 2023-12-21 223700](https://github.com/THARUNDT/Search-Algorithm/assets/144871537/bc19b49c-f5ad-459e-b321-7b2a8163c8ed)
+Program to find the element in a list using Binary Search(Iterative Method).
 ![Screenshot 2023-12-21 223717](https://github.com/THARUNDT/Search-Algorithm/assets/144871537/1e6cf53d-c2cf-4bd5-8ca0-7c5a3e9fa5cb)
+Find the element in a list using Binary Search (recursive Method).
 ![Screenshot 2023-12-21 223730](https://github.com/THARUNDT/Search-Algorithm/assets/144871537/f878c263-0097-4d79-83f4-bd99c23494af)
 
 
