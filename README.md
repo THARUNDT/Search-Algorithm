@@ -18,32 +18,91 @@ To write a program to perform linear search and binary search using python progr
 6.	Repeat steps 2 to 5 until low meets high
 ## Program:
 i)	#Use a linear search method to match the item in a list.
-```
-
-
-
-```
+# Program for linear search method to match the item in a list
+# Developed by: THARUN D
+# RegisterNumber: 23013993
+~~~
+def linearSearch(array,n,k):
+    for i in range(0,n):
+        if(array[i] == k):
+            return i
+    return -1
+            
+    
+array = eval(input())
+k = eval(input())
+n=len(array)
+array.sort()
+result = linearSearch(array,n,k)
+if(result==-1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",result)
+~~~
 ii)	# Find the element in a list using Binary Search(Iterative Method).
-```
+# Program to find the element in a list using Binary Search(Iterative Method)..
+# Developed by: THARUN D
+# RegisterNumber: 23013993
+~~~ 
+def BinarySearchIter(array, k, low, high):
+    while low<=high:
+        mid=low+(high-low)//2
+        if array[mid] == k:
+            return mid
+        if array[mid] == k:
+            return mid
+        elif array[mid] < k:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return -1    
+array = eval(input())
+array.sort()
+k = eval(input()) 
 
-
-
-
-
-```
+result = BinarySearchIter(array,k,0,len(array)-1)
+if(result== -1):
+    print(array)
+    print("Element not found")
+else:
+    print(array)
+    print("Element found at index: ",result)
+~~~
 iii)	# Find the element in a list using Binary Search (recursive Method).
-```
+# Program to find the element in a list using Binary Search (recursive Method).
+# Developed by: THARUN D
+# RegisterNumber: 23013993
+~~~
+def BinarySearch(arr, k, low, high):
+    if high>=low:
+        mid = low + (high - low)//2
+        if arr[mid] == k:
+            return mid
+        elif arr[mid] > k:
+            return BinarySearch(arr, k, low, mid-1)
+        else:
+            return BinarySearch(arr, k , mid+1, high) 
 
-
-
-
-
-```
-## Sample Input and Output
-
-
-
-
+    else:
+        return -1
+        
+arr = eval(input())
+arr.sort()
+k = eval(input()) 
+result = BinarySearch(arr, k, 0, len(arr)-1)
+if(result == -1):
+    print(arr)
+    print("Element not found")
+else:
+    print(arr)
+    print("Element found at index: ",result)
+~~~
+## Output:
+![Screenshot 2023-12-21 223700](https://github.com/THARUNDT/Search-Algorithm/assets/144871537/bc19b49c-f5ad-459e-b321-7b2a8163c8ed)
+![Screenshot 2023-12-21 223717](https://github.com/THARUNDT/Search-Algorithm/assets/144871537/1e6cf53d-c2cf-4bd5-8ca0-7c5a3e9fa5cb)
+![Screenshot 2023-12-21 223730](https://github.com/THARUNDT/Search-Algorithm/assets/144871537/f878c263-0097-4d79-83f4-bd99c23494af)
 
 
 ## Result
